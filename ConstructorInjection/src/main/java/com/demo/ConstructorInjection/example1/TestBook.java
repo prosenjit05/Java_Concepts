@@ -3,9 +3,18 @@ package com.demo.ConstructorInjection.example1;
 public class TestBook {
 
     public static void main(String[] args) {
-        Book book = new Book(new Page(), new Author());
+        // object creation
+//        Book book = new Book();
+//        Page page = new Page();
+//        Author author = new Author();
+//        Publisher publisher = new Publisher();
 
-        book.checkValidBook();
+        // DI
+//        book.setPage(page);
+//        book.setAuthor(author);
+//        book.setPublisher(publisher);
+//
+//        book.checkValidBook();
     }
 
 }
