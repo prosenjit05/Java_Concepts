@@ -27,7 +27,7 @@ public class Book {
     public void checkValidBook(){
 
         //modifyPublisher();
-        this.publisher.printPublishersCount();
+        //this.publisher.printPublishersCount();
 
         // check if we have both the page and the author for a book
         if(this.page==null || this.author==null || this.publisher==null){
