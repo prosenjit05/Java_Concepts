@@ -10,6 +10,9 @@ public class Book {
     private Author author;
     private Publisher publisher;
 
+    @Autowired(required = false)
+    private AuthorFamily authorFamily;
+
     @Autowired
     public Book(Page page, Author author, Publisher publisher) {
         this.page = page;
@@ -25,6 +28,7 @@ public class Book {
 //    public void setPublisher(Publisher publisher) { this.publisher = publisher; }
 
     public void checkValidBook(){
+        System.out.println("AuthorFamily Object: " + this.authorFamily);
 
         //modifyPublisher();
         //this.publisher.printPublishersCount();
