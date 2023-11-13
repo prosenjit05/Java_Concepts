@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAppDetails {
 
-    @Value("my demo name")
+    @Value("${myapp.name}")
     private String myAppName;
-    @Value("my demo version")
+    @Value("${myapp.version}")
     private String myAppVersion;
 
     public String getMyAppName() { return myAppName; }
